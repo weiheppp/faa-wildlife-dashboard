@@ -18,7 +18,7 @@ st.set_page_config(page_title="FAA Wildlife Strike Explorer", layout="wide")
 @st.cache_data
 def load_data():
     try:
-        df = pd.read_csv('wildlife_strikes.csv')
+        df = pd.read_csv('wildlife_strikes.csv'，encoding='latin-1')
         df['INCIDENT_DATE'] = pd.to_datetime(df['INCIDENT_DATE'])
         df['YEAR'] = df['INCIDENT_DATE'].dt.year
         return df
