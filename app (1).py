@@ -113,7 +113,3 @@ if not df.empty:
         """)
 else:
     st.warning("等待加载数据...")
-
-else:
-    st.warning("等待加载数据...")
-
